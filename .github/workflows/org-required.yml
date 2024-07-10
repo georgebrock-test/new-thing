@@ -1,0 +1,13 @@
+name: My Org Required Workflow
+
+on:
+  push:
+  pull_request:
+  merge_group:
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Run some tests
+      run: sleep 10 && echo OK
